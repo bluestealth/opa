@@ -195,6 +195,9 @@ var DefaultBuiltins = [...]*Builtin{
 	IsNull,
 	TypeNameBuiltin,
 
+	// URI
+	URIParse,
+
 	// HTTP
 	HTTPSend,
 
@@ -1758,6 +1761,19 @@ var TypeNameBuiltin = &Builtin{
 			),
 		),
 		types.S,
+	),
+}
+
+/**
+ * URI
+ */
+
+// URIParse returns an object describing the sections of a URI.
+var URIParse = &Builtin{
+	Name: "uri.parse",
+	Decl: types.NewFunction(
+		types.Args(types.S),
+		types.A,
 	),
 }
 

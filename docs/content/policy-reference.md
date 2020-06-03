@@ -827,6 +827,12 @@ org_chart_permissions[entity_name]
 ```live:graph/reachable/example:output
 ```
 
+### URI
+
+| Built-in | Description |
+| ------- |-------------|
+| <span class="opa-keep-it-together">``fields := uri.parse(uristring)``</span> | ``uri.parse`` accepts a URI string and returns the parsed fields of the URI as an object. |
+
 ### HTTP
 
 | Built-in | Description |
