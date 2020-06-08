@@ -831,6 +831,7 @@ org_chart_permissions[entity_name]
 
 | Built-in | Description |
 | ------- |-------------|
+| <span class="opa-keep-it-together">``uristring := uri.format(fields)``</span> | ``uri.format`` accepts an object containing the fields of a URI and returns a string. |
 | <span class="opa-keep-it-together">``fields := uri.parse(uristring)``</span> | ``uri.parse`` accepts a URI string and returns the parsed fields of the URI as an object. |
 
 ### HTTP

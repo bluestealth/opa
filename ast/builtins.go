@@ -196,6 +196,7 @@ var DefaultBuiltins = [...]*Builtin{
 	TypeNameBuiltin,
 
 	// URI
+	URIFormat,
 	URIParse,
 
 	// HTTP
@@ -1767,6 +1768,17 @@ var TypeNameBuiltin = &Builtin{
 /**
  * URI
  */
+
+// URIFormat returns an URI string from an object.
+var URIFormat = &Builtin{
+	Name: "uri.format",
+	Decl: types.NewFunction(
+		types.Args(
+			types.NewObject(nil, types.NewDynamicProperty(types.S, types.A)),
+		),
+		types.S,
+	),
+}
 
 // URIParse returns an object describing the sections of a URI.
 var URIParse = &Builtin{
